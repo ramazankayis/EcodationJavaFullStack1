@@ -1,4 +1,4 @@
-package permalink;
+package com.ramazankayis.permalink;
 
 public class PermaLink {
 
