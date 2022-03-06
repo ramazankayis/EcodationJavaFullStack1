@@ -59,3 +59,6 @@
 2022-03-05 01:12:20.045  INFO 6348 --- [RMI TCP Connection(5)-10.0.75.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2022-03-05 01:12:20.047  INFO 6348 --- [RMI TCP Connection(5)-10.0.75.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2022-03-05 01:12:20.054  INFO 6348 --- [RMI TCP Connection(5)-10.0.75.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2022-03-05 02:05:49.641  INFO 6348 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-03-05 02:05:49.661  INFO 6348 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-03-05 02:05:49.676  INFO 6348 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
