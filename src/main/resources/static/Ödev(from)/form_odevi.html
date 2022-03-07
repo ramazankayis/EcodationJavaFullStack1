@@ -40,26 +40,26 @@
                   <div class="row">
                     <div class="col-md-6 mb-4">
                       <div class="form-outline">
+                        <label class="form-label" for="firstName"
+                          >First Name</label
+                        >
                         <input
                           type="text"
                           id="firstName"
                           class="form-control form-control-lg"
                         />
-                        <label class="form-label" for="firstName"
-                          >First Name</label
-                        >
                       </div>
                     </div>
                     <div class="col-md-6 mb-4">
                       <div class="form-outline">
+                        <label class="form-label" for="lastName"
+                          >Last Name</label
+                        >
                         <input
                           type="text"
                           id="lastName"
                           class="form-control form-control-lg"
                         />
-                        <label class="form-label" for="lastName"
-                          >Last Name</label
-                        >
                       </div>
                     </div>
                   </div>
@@ -67,14 +67,14 @@
                   <div class="row">
                     <div class="col-md-6 mb-4 d-flex align-items-center">
                       <div class="form-outline datepicker w-100">
-                        <input
-                          type="text"
-                          class="form-control form-control-lg"
-                          id="birthdayDate"
-                        />
                         <label for="birthdayDate" class="form-label"
                           >Birthday</label
                         >
+                        <input
+                          type="date"
+                          class="form-control form-control-lg"
+                          id="birthdayDate"
+                        />
                       </div>
                     </div>
                     <div class="col-md-6 mb-4">
@@ -125,42 +125,47 @@
                   <div class="row">
                     <div class="col-md-6 mb-4 pb-2">
                       <div class="form-outline">
+                        <label class="form-label" for="emailAddress"
+                          >Email</label
+                        >
                         <input
                           type="email"
                           id="emailAddress"
                           class="form-control form-control-lg"
                         />
-                        <label class="form-label" for="emailAddress"
-                          >Email</label
-                        >
                       </div>
                     </div>
                     <div class="col-md-6 mb-4 pb-2">
                       <div class="form-outline">
+                        <label class="form-label" for="phoneNumber"
+                          >Phone Number</label
+                        >
                         <input
                           type="tel"
                           id="phoneNumber"
                           class="form-control form-control-lg"
                         />
-                        <label class="form-label" for="phoneNumber"
-                          >Phone Number</label
-                        >
                       </div>
                     </div>
                   </div>
 
                   <div class="row">
                     <div class="col-12">
-                      <select class="select form-control-lg">
-                        <option value="1" disabled>Please Choose option</option>
-                        <option value="2">Subject 1</option>
-                        <option value="3">Subject 2</option>
-                        <option value="4">Subject 3</option>
-                      </select>
-                      <label class="form-label select-label"
-                        >Pelase Choose option</label
-                      >
-                    </div>
+                      <div class="form-outline">
+                        <label class="form-label"
+                          >Pelase Choose option</label
+                        >
+                      </div>
+                        <select class="select form-control-lg">
+                          <option value="1" disabled>
+                            Please Choose option
+                          </option>
+                          <option value="2">Subject 1</option>
+                          <option value="3">Subject 2</option>
+                          <option value="4">Subject 3</option>
+                        </select>
+                      </div>
+                    
                   </div>
 
                   <div class="mt-4 pt-2">
