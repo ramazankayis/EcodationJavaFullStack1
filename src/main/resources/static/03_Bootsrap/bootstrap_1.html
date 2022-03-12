@@ -1,288 +1,399 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>Bootstrap5</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-<head>
-  <title>Bootstrap5</title>
-  <!-- Required meta tags -->
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Bootstrap CSS v5.0.2 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    />
+    <script>
+      function myFunction() {
+        var alertPlaceholder = document.getElementById('demo').id;
+        var alertPlaceholder2 = document.getElementById('demo2').id;
 
-  <!-- Bootstrap CSS v5.0.2 -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" />
+        if (alertPlaceholder) {
+          document.getElementById('demo').innerHTML = '2222222.';
+          document.getElementById('demo2').innerHTML = '11111111.';
+        }
+        
+      }
+    </script>
+    <style>
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    </style>
+  </head>
 
-  <style>
-    img {
-      max-width: 100%;
-      height: auto;
-    }
-  </style>
-</head>
+  <body class="bg-dark container text-white mb-5">
+    <!-- start codes -->
+    <div class="mb-5"></div>
 
-<body class="bg-dark container text-white mb-5">
-  <!-- start codes -->
-  <div class="mb-5"></div>
+    <h2>Demo JavaScript in Head</h2>
 
-<!-- tooltip:üzerine gelidğimde bilgi vermek -->
-<button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top">
-  Tooltip on top
-</button>
-<button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="right"
-  title="Tooltip on right">
-  Tooltip on right
-</button>
-<button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="bottom"
-  title="Tooltip on bottom">
-  Tooltip on bottom
-</button>
-<button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="left"
-  title="Tooltip on left">
-  Tooltip on left
-</button>
+    <p id="demo">A Paragraph 11111111111111.</p>
+    <p id="demo2">A Paragraph.22222222222222</p>
 
-  <hr>
-  <div class="accordion" id="accordionExample">
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="headingOne">
-        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-          aria-expanded="true" aria-controls="collapseOne">
-          Accordion Item #1
-        </button>
-      </h2>
-      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-        data-bs-parent="#accordionExample">
-        <div class="accordion-body text-dark">
-          <strong class="text-dark">This is the first item's accordion body.</strong> It is shown by default, until the
-          collapse plugin adds
-          the appropriate classes that we use to style each element. These classes control the overall appearance, as well
-          as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our
-          default variables. It's also worth noting that just about any HTML can go within the
-          <code>.accordion-body</code>, though the transition does limit overflow.
+    <button type="button" onclick="myFunction()">Try it</button>
+
+    <hr />
+    <!-- tooltip:üzerine gelidğimde bilgi vermek -->
+    <button
+      type="button"
+      class="btn btn-secondary"
+      data-bs-toggle="tooltip"
+      data-bs-placement="top"
+      title="Tooltip on top"
+    >
+      Tooltip on top
+    </button>
+    <button
+      type="button"
+      class="btn btn-secondary"
+      data-bs-toggle="tooltip"
+      data-bs-placement="right"
+      title="Tooltip on right"
+    >
+      Tooltip on right
+    </button>
+    <button
+      type="button"
+      class="btn btn-secondary"
+      data-bs-toggle="tooltip"
+      data-bs-placement="bottom"
+      title="Tooltip on bottom"
+    >
+      Tooltip on bottom
+    </button>
+    <button
+      type="button"
+      class="btn btn-secondary"
+      data-bs-toggle="tooltip"
+      data-bs-placement="left"
+      title="Tooltip on left"
+    >
+      Tooltip on left
+    </button>
+
+    <hr />
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button
+            class="accordion-button"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseOne"
+            aria-expanded="true"
+            aria-controls="collapseOne"
+          >
+            Accordion Item #1
+          </button>
+        </h2>
+        <div
+          id="collapseOne"
+          class="accordion-collapse collapse show"
+          aria-labelledby="headingOne"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body text-dark">
+            <strong class="text-dark"
+              >This is the first item's accordion body.</strong
+            >
+            It is shown by default, until the collapse plugin adds the
+            appropriate classes that we use to style each element. These classes
+            control the overall appearance, as well as the showing and hiding
+            via CSS transitions. You can modify any of this with custom CSS or
+            overriding our default variables. It's also worth noting that just
+            about any HTML can go within the <code>.accordion-body</code>,
+            though the transition does limit overflow.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseTwo"
+            aria-expanded="false"
+            aria-controls="collapseTwo"
+          >
+            Accordion Item #2
+          </button>
+        </h2>
+        <div
+          id="collapseTwo"
+          class="accordion-collapse collapse"
+          aria-labelledby="headingTwo"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body text-dark">
+            <strong>This is the second item's accordion body.</strong> It is
+            hidden by default, until the collapse plugin adds the appropriate
+            classes that we use to style each element. These classes control the
+            overall appearance, as well as the showing and hiding via CSS
+            transitions. You can modify any of this with custom CSS or
+            overriding our default variables. It's also worth noting that just
+            about any HTML can go within the <code>.accordion-body</code>,
+            though the transition does limit overflow.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseThree"
+            aria-expanded="false"
+            aria-controls="collapseThree"
+          >
+            Accordion Item #3
+          </button>
+        </h2>
+        <div
+          id="collapseThree"
+          class="accordion-collapse collapse"
+          aria-labelledby="headingThree"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body text-dark">
+            <strong>This is the third item's accordion body.</strong> It is
+            hidden by default, until the collapse plugin adds the appropriate
+            classes that we use to style each element. These classes control the
+            overall appearance, as well as the showing and hiding via CSS
+            transitions. You can modify any of this with custom CSS or
+            overriding our default variables. It's also worth noting that just
+            about any HTML can go within the <code>.accordion-body</code>,
+            though the transition does limit overflow.
+          </div>
         </div>
       </div>
     </div>
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="headingTwo">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
-          aria-expanded="false" aria-controls="collapseTwo">
-          Accordion Item #2
+
+    <hr />
+    <!-- list -->
+    <ul class="list-group">
+      <li class="list-group-item active">Active item</li>
+      <li class="list-group-item">Item</li>
+      <li class="list-group-item disabled">Disabled item</li>
+    </ul>
+    <hr />
+
+    <!-- breadcrumb -->
+    <nav>
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">Full stack</a></li>
+        <li class="breadcrumb-item"><a href="#">Frontend</a></li>
+        <li class="breadcrumb-item"><a href="#">Bootstrap</a></li>
+        <li class="breadcrumb-item active" aria-current="page">BreadCrump</li>
+      </ol>
+    </nav>
+
+    <br /><br /><br />
+    <!-- alert -->
+    <div class="alert alert-primary" role="alert">
+      <strong>Check it out!</strong>
+    </div>
+
+    <div class="alert alert-danger" role="alert">
+      <i>Check it out!</i>
+      <a href="#" class="alert-link">an example link</a>
+    </div>
+
+    <div class="alert alert-secondary" role="alert">
+      <strong>Check it out!</strong>
+    </div>
+
+    <button class="btn btn-warning" id="liveAlertBtn">Show/Hide</button>
+
+    <hr />
+
+    <hr />
+    <h1 class="display-1 text-center text-uppercase">REgister</h1>
+    <hr style="margin-left: 25%" class="text-center w-50" />
+    <form action="index.jsp" method="post">
+      <div class="form-group">
+        <label for="nameandsurname" class="form-label">Adınız Soyadınız</label>
+        <input
+          type="text"
+          class="form-control"
+          id="nameandsurname"
+          name="nameandsurname"
+          placeholder="adınız soyadınız"
+          required
+        />
+        <div class="d-none44 text-muted">uygun formatta giriniz</div>
+      </div>
+
+      <div class="form-group mt-3">
+        <label for="email" class="form-label">email</label>
+        <input
+          type="email"
+          class="form-control"
+          id="email"
+          name="email"
+          placeholder="email"
+          required
+          autofocus
+        />
+        <div class="d-none text-muted">uygun formatta giriniz</div>
+      </div>
+
+      <div class="form-group mt-3">
+        <label for="password" class="form-label">password</label>
+        <input
+          type="password"
+          class="form-control"
+          id="password"
+          name="password"
+          placeholder="password"
+          required
+        />
+        <div class="d-none text-muted">uygun formatta giriniz</div>
+      </div>
+
+      <div class="btn-group mt-3">
+        <input
+          type="reset"
+          class="text-uppercase btn btn-danger mr-3 pr-3"
+          value="TeMİzle"
+        />
+        <button type="submit" class="text-uppercase btn btn-primary ml-3">
+          gÖnder
         </button>
-      </h2>
-      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-        data-bs-parent="#accordionExample">
-        <div class="accordion-body text-dark">
-          <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin
-          adds the appropriate classes that we use to style each element. These classes control the overall appearance, as
-          well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our
-          default variables. It's also worth noting that just about any HTML can go within the
-          <code>.accordion-body</code>, though the transition does limit overflow.
-        </div>
+      </div>
+    </form>
+
+    <hr />
+    <table
+      class="text-white bg-info table table-hover table-striped table-bordered table-sm table-responsive"
+    >
+      <thead class="bg-success text-uppercase">
+        <tr>
+          <th>Id</th>
+          <th>Frontend</th>
+          <th>Backend</th>
+          <th>Database</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Html-1</td>
+          <td>Java-1</td>
+          <td>Mysql-1</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Html-2</td>
+          <td>Java-2</td>
+          <td>Mysql-2</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Html-3</td>
+          <td>Java-3</td>
+          <td>Mysql-3</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Html-4</td>
+          <td>Java-4</td>
+          <td>Mysql-4</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>Html-5</td>
+          <td>Java-5</td>
+          <td>Mysql-5</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <hr />
+    <div class="clearfix">
+      <img
+        src="../img/forget-me-nots-gc8a90429d_1920.jpg"
+        class="w-50 mb-3 float-end rounded-circle44 img-thumbnail img-fluid"
+        alt="resim yok"
+      />
+    </div>
+
+    <p class="justify-content-cente">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde neque
+      repudiandae illo fuga, non quaerat debitis ea officiis dolor provident
+      vero aspernatur voluptate, inventore eaque ad, veritatis beatae.
+      Recusandae, fugit? Voluptas laudantium nisi rerum, quas sit quisquam
+      soluta, aliquam quia esse impedit nulla doloribus culpa distinctio
+      assumenda natus fuga quis, deserunt consequuntur consequatur animi! Unde
+      quos magni debitis totam in?
+    </p>
+
+    <hr />
+
+    <!-- sm<md<lg -->
+    <a href="" class="btn btn-primary btn-sm">Link</a>
+    <button class="btn text-danger btn-link btn-sm">Button</button>
+    <button class="btn btn-outline-danger mt-3">Outline</button>
+    <button class="btn btn-success d-block mb-5 active">Active</button>
+    <button class="btn btn-success d-block disabled">Passive</button>
+
+    <!-- text-uppercase text-lowercase  -->
+    <p class="mt-3 lead text-muted text-capitalize text-center fst-italic">
+      Lorem ipsum Lorem ipsum dolor sit amet.
+    </p>
+
+    <!-- d-inline d-block -->
+    <div class="d-block p-2 bg-primary text-info">d-block</div>
+    <div class="d-inline p-2 bg-warning text-success">d-inline</div>
+
+    <hr />
+    <div
+      style="font-size: 40px"
+      class="bg-primary text-white w-50 h-25 m-5 p-5 border border-info border-5 shadow rounded"
+    >
+      1.kutu
+    </div>
+
+    <hr />
+    <p class="display-1">display 1</p>
+    <p class="display-2">display 2</p>
+    <p class="display-3">display 3</p>
+    <p class="display-4">display 4</p>
+
+    <hr />
+    <p class="h1 text-primary">h1 heading</p>
+    <p class="h2 text-secondary">h2 heading</p>
+    <p class="h3 text-success">h3 heading</p>
+    <p class="h4 text-danger">h4 heading</p>
+    <p class="h5 text-warning">h5 heading</p>
+    <p class="h6 text-light">h6 heading</p>
+    <hr />
+
+    <div class="container">
+      <div class="row">
+        <div style="background: red" class="col-9">1.kutu</div>
+        <div style="background: blue" class="col">2.kutu</div>
       </div>
     </div>
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="headingThree">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
-          aria-expanded="false" aria-controls="collapseThree">
-          Accordion Item #3
-        </button>
-      </h2>
-      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-        data-bs-parent="#accordionExample">
-        <div class="accordion-body text-dark">
-          <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin
-          adds the appropriate classes that we use to style each element. These classes control the overall appearance, as
-          well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our
-          default variables. It's also worth noting that just about any HTML can go within the
-          <code>.accordion-body</code>, though the transition does limit overflow.
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  
-  <hr>
-  <!-- list -->
-  <ul class="list-group">
-    <li class="list-group-item active">Active item</li>
-    <li class="list-group-item">Item</li>
-    <li class="list-group-item disabled">Disabled item</li>
-  </ul>
-  <hr>
 
-  <!-- breadcrumb -->
-  <nav>
-    <ol class="breadcrumb">
-      <li class="breadcrumb-item"><a href="#">Full stack</a></li>
-      <li class="breadcrumb-item"><a href="#">Frontend</a></li>
-      <li class="breadcrumb-item"><a href="#">Bootstrap</a></li>
-      <li class="breadcrumb-item active" aria-current="page">BreadCrump</li>
-    </ol>
-  </nav>
-
-  <br><br><br>
-  <!-- alert -->
-  <div class="alert alert-primary" role="alert">
-    <strong>Check it out!</strong>
-  </div>
-
-  <div class="alert alert-danger" role="alert">
-    <i>Check it out!</i>
-    <a href="#" class="alert-link">an example link</a>
-  </div>
-
-
-  <div class="alert alert-secondary" role="alert">
-    <strong>Check it out!</strong>
-  </div>
-
-  <button class="btn btn-warning" id="liveAlertBtn">Show/Hide</button>
-
-
-
-  <hr>
-
-  <hr>
-  <h1 class="display-1 text-center text-uppercase">REgister</h1>
-  <hr style="margin-left:25%" class="text-center w-50">
-  <form action="index.jsp" method="post">
-    <div class="form-group">
-      <label for="nameandsurname" class="form-label">Adınız Soyadınız</label>
-      <input type="text" class="form-control" id="nameandsurname" name="nameandsurname" placeholder="adınız soyadınız"
-        required>
-      <div class="d-none44 text-muted">uygun formatta giriniz</div>
-    </div>
-
-
-    <div class="form-group mt-3">
-      <label for="email" class="form-label">email</label>
-      <input type="email" class="form-control" id="email" name="email" placeholder="email" required autofocus>
-      <div class="d-none text-muted">uygun formatta giriniz</div>
-    </div>
-
-    <div class="form-group mt-3">
-      <label for="password" class="form-label">password</label>
-      <input type="password" class="form-control" id="password" name="password" placeholder="password" required>
-      <div class="d-none text-muted">uygun formatta giriniz</div>
-    </div>
-
-    <div class="btn-group mt-3">
-      <input type="reset" class="text-uppercase btn btn-danger mr-3 pr-3" value="TeMİzle">
-      <button type="submit" class="text-uppercase btn btn-primary ml-3">gÖnder</button>
-    </div>
-
-
-  </form>
-
-
-  <hr>
-  <table class="text-white bg-info table table-hover table-striped table-bordered table-sm table-responsive">
-
-    <thead class="bg-success text-uppercase">
-      <tr>
-        <th>Id</th>
-        <th>Frontend</th>
-        <th>Backend</th>
-        <th>Database</th>
-      </tr>
-    </thead>
-
-    <tbody>
-      <tr>
-        <td>1</td>
-        <td>Html-1</td>
-        <td>Java-1</td>
-        <td>Mysql-1</td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>Html-2</td>
-        <td>Java-2</td>
-        <td>Mysql-2</td>
-      </tr>
-      <tr>
-        <td>3</td>
-        <td>Html-3</td>
-        <td>Java-3</td>
-        <td>Mysql-3</td>
-      </tr>
-      <tr>
-        <td>4</td>
-        <td>Html-4</td>
-        <td>Java-4</td>
-        <td>Mysql-4</td>
-      </tr>
-      <tr>
-        <td>5</td>
-        <td>Html-5</td>
-        <td>Java-5</td>
-        <td>Mysql-5</td>
-      </tr>
-    </tbody>
-  </table>
-
-  <hr>
-  <div class="clearfix">
-    <img src="../img/forget-me-nots-gc8a90429d_1920.jpg"
-      class="w-50 mb-3 float-end rounded-circle44 img-thumbnail img-fluid " alt="resim yok" />
-  </div>
-
-  <p class="justify-content-cente">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde neque repudiandae illo
-    fuga, non quaerat debitis ea officiis dolor provident vero aspernatur voluptate, inventore eaque ad, veritatis
-    beatae. Recusandae, fugit?
-    Voluptas laudantium nisi rerum, quas sit quisquam soluta, aliquam quia esse impedit nulla doloribus culpa distinctio
-    assumenda natus fuga quis, deserunt consequuntur consequatur animi! Unde quos magni debitis totam in?</p>
-
-  <hr>
-
-
-  <!-- sm<md<lg -->
-  <a href="" class="btn btn-primary btn-sm">Link</a>
-  <button class="btn text-danger btn-link btn-sm">Button</button>
-  <button class="btn  btn-outline-danger mt-3">Outline</button>
-  <button class="btn btn-success d-block mb-5 active">Active</button>
-  <button class="btn btn-success d-block disabled">Passive</button>
-
-
-
-  <!-- text-uppercase text-lowercase  -->
-  <p class="mt-3 lead text-muted text-capitalize text-center fst-italic">
-    Lorem ipsum Lorem ipsum dolor sit amet.
-  </p>
-
-  <!-- d-inline d-block -->
-  <div class="d-block p-2 bg-primary text-info">d-block</div>
-  <div class="d-inline p-2 bg-warning text-success">d-inline</div>
-
-  <hr />
-  <div style="font-size: 40px" class="bg-primary text-white w-50 h-25 m-5 p-5 border border-info border-5 shadow rounded">
-    1.kutu
-  </div>
-
-  <hr />
-  <p class="display-1">display 1</p>
-  <p class="display-2">display 2</p>
-  <p class="display-3">display 3</p>
-  <p class="display-4">display 4</p>
-
-  <hr />
-  <p class="h1 text-primary">h1 heading</p>
-  <p class="h2 text-secondary">h2 heading</p>
-  <p class="h3 text-success">h3 heading</p>
-  <p class="h4 text-danger">h4 heading</p>
-  <p class="h5 text-warning">h5 heading</p>
-  <p class="h6 text-light">h6 heading</p>
-  <hr />
-
-  <div class="container">
-    <div class="row">
-      <div style="background: red" class="col-9">1.kutu</div>
-      <div style="background: blue" class="col">2.kutu</div>
-    </div>
-  </div>
-
-  <!-- ends codes -->
-  <!-- Bootstrap JavaScript Libraries -->
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
-</body>
-
+    <!-- ends codes -->
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+  </body>
 </html>
