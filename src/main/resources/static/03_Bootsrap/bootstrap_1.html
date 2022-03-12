@@ -9,7 +9,22 @@
 
   <!-- Bootstrap CSS v5.0.2 -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" />
+<script>
 
+var alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+var alertTrigger = document.getElementById('liveAlertBtn')
+
+console.log('alertPlaceholder', alertPlaceholder)
+ 
+
+if (alertTrigger) {
+  alertTrigger.addEventListener('click', function () {
+    alert('Nice, you triggered this alert message!', 'success')
+  })
+}
+
+
+</script>
   <style>
     img {
       max-width: 100%;
@@ -21,6 +36,10 @@
 <body class="bg-dark container text-white mb-5">
   <div class="mb-5"></div>
   <!-- start codes -->
+
+  <div id="liveAlertPlaceholder"> selam</div>
+  <button type="button" class="btn btn-primary" id="liveAlertBtn">Show live alert</button>
+
   <nav>
     <ol class="breadcrumb">
       <li class="breadcrumb-item"><a href="#">Full stack</a></li>
@@ -170,7 +189,10 @@
 
   <!-- ends codes -->
   <!-- Bootstrap JavaScript Libraries -->
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js">
+
+
+  </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
   </body>
 
