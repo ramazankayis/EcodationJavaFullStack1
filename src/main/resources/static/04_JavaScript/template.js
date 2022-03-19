@@ -176,40 +176,289 @@
 // //Bu sayı değil mi : true dönüyorsa bu sayı değildir.
 // console.log(isNaN(sayi5));
 
-
-
 //////////////////////////////////////////////////////////
 //METINSEL
-let metinsel="secret Html5 Css3 js Html5  ";
+// let metinsel="secret Html5 Css3 js Html5  ";
 
-//kelime harf sayısını verir
-//length: harf sayısını verir unutmayalım () yazmıyoruz.
-console.log(metinsel.length);
+// //kelime harf sayısını verir
+// //length: harf sayısını verir unutmayalım () yazmıyoruz.
+// console.log(metinsel.length);
 
-//kelimenin hepsini büyük harfe çevirir
-console.log(metinsel.toUpperCase());
+// //kelimenin hepsini büyük harfe çevirir
+// console.log(metinsel.toUpperCase());
 
-//kelimenin hepsini küçük harfe çevirir
-console.log(metinsel.toLowerCase());
+// //kelimenin hepsini küçük harfe çevirir
+// console.log(metinsel.toLowerCase());
 
-//vermiş olduğumuz indise karşılık harfi bana döner
-//charAt(): 0(sıfır) indistenn başlar
-console.log(metinsel.charAt(10));
+// //vermiş olduğumuz indise karşılık harfi bana döner
+// //charAt(): 0(sıfır) indistenn başlar
+// //alternative: charCodeAt()
+// console.log(metinsel.charAt(10));
 
-//indexOf(): soldan sağa doğru arama yapar ilk bulduğu yerin sayısını döner
-console.log(metinsel.indexOf("Html5"))
+// //indexOf(): soldan sağa doğru arama yapar ilk bulduğu yerin sayısını döner
+// //alternatice: search()
+// console.log(metinsel.indexOf("Html5"))
 
-//lastindexOf(): sağa sola doğru arama yapar ilk bulduğu yerin sayısını döner
-console.log(metinsel.lastIndexOf("Html5"))
+// //lastindexOf(): sağa sola doğru arama yapar ilk bulduğu yerin sayısını döner
+// console.log(metinsel.lastIndexOf("Html5"))
 
-//substring:kelimeyi parçalama
-console.log(metinsel.substring(6));
-console.log(metinsel.substring(0,6)); //0<=X<6
+// //substring:kelimeyi parçalama
+// //alternative:slice()
+// console.log(metinsel.substring(6));
+// console.log(metinsel.substring(0,6)); //0<=X<6
 
-// trim: boşlukları almak için kullanıyoruz
-console.log(metinsel.length)
-console.log(metinsel.trim().length)
+// // trim: boşlukları almak için kullanıyoruz
+// console.log(metinsel.length)
+// console.log(metinsel.trim().length)
 
-//replace: değiştirmek için kullanıyoruz
-//replace(eskisi,yenisi)
-console.log(metinsel.replace(metinsel,"asd"))
+// //replace: değiştirmek için kullanıyoruz
+// //replace(eskisi,yenisi)
+// console.log(metinsel.replace(metinsel,"asd"))
+
+/////////////////////////////////////////////
+// try {
+//   alet('Merhablar');
+// } catch (error) {
+//   alert("name:"+error.name)
+//   alert("message"+error.message)
+//   throw  "Doğru yaz"; //kendi istisna durumumuzu oluşturuyoruz.
+// } finally {
+//   console.log('db.close')
+//   console.log('port.close')
+// }
+
+/////////////////////////////////////////////
+//function-1
+//kod tekrarlarımızın önüne geçmek,
+//clean code yazmamıza yardımcı
+//okunarbiliriğini artırmak
+//proje  hızlı sağlamak
+
+// //function-1.1
+function hesaplama() {
+    let x1, x2, x3
+    x1 = 10
+    x2 = 20
+    x3 = x1 + x2
+    console.log(x3)
+  }
+  //hesaplama();
+  
+  //function-1.2 ==> Parametreli
+  function hesaplama2(x1, x2) {
+    let x3
+    x3 = x1 + x2
+    console.log(x3)
+  }
+  //hesaplama2(10,20);
+  
+  //function-1.3 ==> return
+  function hesaplama2(x1, x2) {
+    return x1 + x2
+  }
+  //değişkeni başka bir hesaplamada kullanmak istersek
+  let cay = hesaplama2(10, 20)
+  //console.log(cay)
+  
+  // function-2
+  // normal
+  function ekrandaYaz1() {
+    console.log('Normal Ekranda göster')
+  }
+  //ekrandaYaz1();
+  
+  // değişkenli function
+  let isimsiz1 = function ekrandaYaz2() {
+    console.log('değişkenli function')
+  }
+  //isimsiz1();
+  
+  //anonymous function : isimsiz fonksiyon
+  let isimsiz2 = function () {
+    console.log('anonymous function')
+  }
+  //isimsiz2();
+  
+  //function-3
+  //arrow function : ok fonksiyon
+  // ()=>{}
+  let arrow = () => {
+    console.log('arrow function ')
+  }
+  //arrow();
+  
+  //function-4
+  //Immedia Function: fonksiyonu çağırmadan kullanıyoruz.
+  // ()()
+  ;(function ekrandaYaz2() {
+    console.log('değişkenli function')
+  })()
+  
+  /////////////////////////////////////////////
+  //isim ve soyisimi console çıktısı gösterecek
+  // 1-)Normal Function
+  // 2-)değişkenli function
+  // 3-)anonymous
+  // 4-)arrow function ()=>{}
+  // 5-)Hemen function ()()
+  
+  ///////////////////////////////////////////////
+  //condition
+  // let karar=()=>{
+  //     let sayi="5";
+  
+  //     if(sayi===5){
+  //         console.log("sayı 5 tir")
+  //     }else{
+  //         console.log("farklıdır")
+  //     }
+  // }
+  // karar();
+  
+  // //ternary
+  // let karar2=()=>{
+  // //ternary: ya dpğru ya yanlış ==> ()?:;
+  // let sayi="5";
+  // console.log((sayi===5) ?"sayı 5 tir":"farklıdır")
+  // }
+  // karar2();
+  
+  // //çoklu if -elseif-else
+  // let karar3 = () => {
+  //   let sayi = 5
+  
+  //   if (sayi === 1) {
+  //     console.log('sayı 1 tir')
+  //   } else if (sayi == 2) {
+  //     console.log('sayı 2 tir')
+  //   } else if (sayi == 3) {
+  //     console.log('sayı 3 tir')
+  //   } else if (sayi == 4) {
+  //     console.log('sayı 4 tir')
+  //   } else if (sayi == 5) {
+  //     console.log('sayı 5 tir')
+  //   } else {
+  //     console.log('farklıdır')
+  //   }
+  // }
+  // karar3()
+  
+  // //switch case
+  // let karar4 = () => {
+  //     let sayi = 5
+  //     switch (sayi) {
+  //       case 1:
+  //         console.log('sayı 1 tir')
+  //         break
+  
+  //       case 2:
+  //         console.log('sayı 2 tir')
+  //         break
+  
+  //       case 3:
+  //         console.log('sayı 3 tir')
+  //         break
+  
+  //       case 4:
+  //         console.log('sayı 4 tir')
+  //         break
+  //       case 5:
+  //         console.log('sayı 5 tir')
+  //         break
+  
+  //       default:
+  //         console.log('farklıdır')
+  //         break
+  //     }
+  //   }
+  //   karar4();
+  
+  //////////////////////////////////////////////////////
+  //Loop
+  console.log(1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10 + 11 + 12)
+  
+  //FOR
+  //Başlangıç: let i=1
+  //Bitiş: i<=10
+  //artırmak i++
+  //artırmak i=i+1
+  //artırmak i+=1
+  // for(let i=1; i<=10; i+=1){
+  // console.log(i+". sayı")
+  // }
+  
+  //while
+  //Başlangıç: let i=1
+  //Bitiş: i<=10
+  //artırmak i++
+  //artırmak i=i+1
+  //artırmak i+=1
+  
+  // let k=1;
+  // while(k<=10){
+  //     console.log(k+". sayı")
+  //     k++;
+  // }
+  
+  //do-while
+  // let m=1;
+  // do {
+  //     console.log("ister şart sağlansın ister sağlamasın 1 kere çalışır"+m)
+  //     m++;
+  // } while (m==1);
+  
+  console.log(1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10 + 11 + 12)
+  //toplamada etkisiz eleman 0
+  
+  let sum = 0 //başlangıç
+  for (let index = 1; index <= 100; index++) {
+    sum = sum + index
+  }
+  console.log(sum)
+  
+  // kullanıcıdan alına bir sayıyı negatif mi pozitif mi? arrow function
+  let isNegative = () => {
+    let number = Number(prompt('Lütfen bir sayı giriniz'))
+    let result = number < 0 ? 'negatiftir' : 'pozitiftir'
+    console.log(result)
+  }
+  //isNegative();
+  
+  //continue:Es geçer
+  //break:döngünün çalışmasını engeller(durdurur)
+  //return:metodun çalışmasını engeller(durdurur)
+  
+  let number5 = () => {
+    let sum = 0 //başlangıç
+    for (let index = 1; index <= 15; index++) {
+      if(index>=5) break;
+        if(index==4){
+            continue; 
+        }
+      sum = sum + index
+    }
+    console.log("sonuç: "+sum)
+  }
+  number5();
+  
+  
+  //S-1)
+  //a-1) 1-10 arasındaki tek çift sayılar
+  //a-2) 1-10 arasındaki 4 dahil olmayacak ==> continue
+  //a-3-) 1-100 arasında 5'e bölünebilen kaç tane sayı vardır ve bu sayılar?
+  let isEven = () => {
+    let number = Number(prompt('Lütfen bir sayı giriniz'))
+    let result = number % 2 == 0 ? 'çifttir' : 'tektir'
+    console.log(result)
+  }
+  isEven()
+  
+  //dereceyi fahrenhayta çeviren function yazalım
+  //Mutlak değer hesaplayan function yazalım ? Math.abs()
+  //üslü sayı alan fonksiyon yazalım Math.pow()
+  //v.k.i
+  //Kullanıcıdan aldığımız adımız ve soyadımızı string metotlarını kullanacağız.
+  
+  //Kullanıcıdan aldığımız kelime(Hamit Mızrak) maskeleme yapalım ?
+  //H**** M*****
+  
