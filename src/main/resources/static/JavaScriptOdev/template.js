@@ -1,6 +1,6 @@
 
 //üslü sayı alan fonksiyon yazalım Math.pow()
-// örnek : 2 üssü 4 = 16 
+//örnek : 2 üssü 4 = 16 
 // let usluSayı = (baseNumber,powerOfNumber)=>{
 
 //   if(baseNumber<0)
@@ -33,4 +33,4 @@ let usluSayı2 = (baseNumber,powerOfNumber)=>{
 
 
 console.log("üslü sayı = ",usluSayı2(tabanSayisi,ussuSayisi));
-usluSayı2(tabanSayisi,ussuSayisi);
+//usluSayı2(tabanSayisi,ussuSayisi);
