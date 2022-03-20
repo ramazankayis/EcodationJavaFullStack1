@@ -43,3 +43,17 @@
 // };
 
 // console.log(sayi + ' derece = ' + hesapla(sayi) + " Fahrenheit'dir");
+
+//**************************************************************************** */
+//
+//Mutlak değer hesaplayan function yazalım ? Math.abs()
+
+ 
+let sayi = Number(prompt('Lütfen bir sayı giriniz'));
+let mutlakHesapla = (sayi) => {
+  let mutlak = Math.abs(sayi);
+
+  return mutlak;
+};
+
+console.log(sayi + ' mutlak değeri = ' + mutlakHesapla(sayi) );
