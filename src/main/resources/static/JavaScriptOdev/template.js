@@ -59,23 +59,61 @@
 ////*********************************************** */
 
 //v.k.i
-let boy = Number(prompt('Lütfen boyunuzu giriniz'));
-let kilo = Number(prompt('Lütfen kilonuzu giriniz'));
+// let boy = Number(prompt('Lütfen boyunuzu giriniz'));
+// let kilo = Number(prompt('Lütfen kilonuzu giriniz'));
 
-let vki = (boy, kilo) => {
-  let ind = kilo / (boy ** 2);
-console.log('ind', ind)
-  console.log('calculator', boy ** 2);
-  console.log('calculator2', boy *boy);
-  if (ind < 18.5) {
-    return 'zayıf';
-  } else if (ind>=18 && ind<25) {
-    return 'normal';
-  } else if (ind>=25 && ind<30) {
-    return 'kilolu';
-  } else {
-    return 'obese';
+// let vki = (boy, kilo) => {
+//   let ind = kilo / (boy ** 2);
+// console.log('ind', ind)
+//   console.log('calculator', boy ** 2);
+//   console.log('calculator2', boy *boy);
+//   if (ind < 18.5) {
+//     return 'zayıf';
+//   } else if (ind>=18 && ind<25) {
+//     return 'normal';
+//   } else if (ind>=25 && ind<30) {
+//     return 'kilolu';
+//   } else {
+//     return 'obese';
+//   }
+// };
+
+// console.log('vücut index =', vki(boy, kilo));
+
+///************************************************ */
+
+//Kullanıcıdan aldığımız kelime(Hamit Mızrak) maskeleme yapalım ?
+
+let kelime = prompt('Lütfen adınız ve soyadınızı giriniz');
+
+let masked = (kelime) => {
+  let yeniKelime = kelime.split(' ');
+
+  let yeniKelime1 = yeniKelime[0];
+  let yeniKelime2 = yeniKelime[1];
+  let element = '';
+  for (let index = 0; index < yeniKelime1.length; index++) {
+    //element  += array[index];
+    console.log('index', yeniKelime1[index]);
+    if (index === 0) {
+      element += yeniKelime1[index];
+    } else {
+      element += '*';
+    }
   }
+
+  let element2 = '';
+  for (let index = 0; index < yeniKelime2.length; index++) {
+    //element  += array[index];
+    console.log('index', yeniKelime2[index]);
+    if (index === 0) {
+      element2 += yeniKelime2[index];
+    } else {
+      element2 += '*';
+    }
+  }
+
+  return element + ' ' + element2;
 };
 
-console.log('vücut index =', vki(boy, kilo));
+console.log('isminizin maskelenmiş hali=', masked(kelime));
