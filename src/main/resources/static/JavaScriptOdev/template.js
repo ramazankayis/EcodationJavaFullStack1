@@ -48,12 +48,34 @@
 //
 //Mutlak değer hesaplayan function yazalım ? Math.abs()
 
- 
-let sayi = Number(prompt('Lütfen bir sayı giriniz'));
-let mutlakHesapla = (sayi) => {
-  let mutlak = Math.abs(sayi);
+// let sayi = Number(prompt('Lütfen bir sayı giriniz'));
+// let mutlakHesapla = (sayi) => {
+//   let mutlak = Math.abs(sayi);
 
-  return mutlak;
+//   return mutlak;
+// };
+
+// console.log(sayi + ' mutlak değeri = ' + mutlakHesapla(sayi) );
+////*********************************************** */
+
+//v.k.i
+let boy = Number(prompt('Lütfen boyunuzu giriniz'));
+let kilo = Number(prompt('Lütfen kilonuzu giriniz'));
+
+let vki = (boy, kilo) => {
+  let ind = kilo / (boy ** 2);
+console.log('ind', ind)
+  console.log('calculator', boy ** 2);
+  console.log('calculator2', boy *boy);
+  if (ind < 18.5) {
+    return 'zayıf';
+  } else if (ind>=18 && ind<25) {
+    return 'normal';
+  } else if (ind>=25 && ind<30) {
+    return 'kilolu';
+  } else {
+    return 'obese';
+  }
 };
 
-console.log(sayi + ' mutlak değeri = ' + mutlakHesapla(sayi) );
+console.log('vücut index =', vki(boy, kilo));
