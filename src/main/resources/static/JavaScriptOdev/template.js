@@ -178,15 +178,15 @@ let enBuyukEleman = (element) => {
 };
 
 let enKucukEleman = (element) => {
-  let enKuyuk = element[0];
+  let enKucuk = element[0];
   for (let i = 0; i < element.length; i++) {
-    if (element[i] < enKuyuk) {
-      enKuyuk = element[i];
+    if (element[i] < enKucuk) {
+      enKucuk = element[i];
     }
   }
 
   //console.log('enKuyukkk2', enKuyuk);
-  return enKuyuk;
+  return enKucuk;
 };
 
 let enBuyukElemanınKarakökü = (enBuyuk2) => {
